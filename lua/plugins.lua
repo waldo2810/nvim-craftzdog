@@ -1,8 +1,8 @@
 local ensure_packer = function()
   local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
   if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
     vim.cmd [[packadd packer.nvim]]
     return true
   end
@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
 
   -- Colorscheme
   use { 'sainnhe/gruvbox-material' }
+  use { 'rose-pine/neovim' }
 
   -- Lualine
   use {
@@ -36,10 +37,10 @@ return require('packer').startup(function(use)
 
   -- Autocompletion
   use 'onsails/lspkind-nvim' -- VSCode-like pictograms
-  use 'L3MON4D3/LuaSnip' -- Snippet engine
+  use 'L3MON4D3/LuaSnip'     -- Snippet engine
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
-  use 'hrsh7th/nvim-cmp' -- A completion engine plugin for neovim
+  use 'hrsh7th/cmp-buffer'   -- nvim-cmp source for buffer words
+  use 'hrsh7th/nvim-cmp'     -- A completion engine plugin for neovim
 
   -- Treesitter
   use {
@@ -81,7 +82,7 @@ return require('packer').startup(function(use)
   use 'MunifTanjim/nui.nvim'
   use 'nvim-neo-tree/neo-tree.nvim'
 
--- -----------------------------------------
+  -- -----------------------------------------
   if packer_bootstrap then
     require('packer').sync()
   end
