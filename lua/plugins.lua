@@ -77,6 +77,10 @@ return require('packer').startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
+  -- Neotree
+  use 'MunifTanjim/nui.nvim'
+  use 'nvim-neo-tree/neo-tree.nvim'
+
 -- -----------------------------------------
   if packer_bootstrap then
     require('packer').sync()

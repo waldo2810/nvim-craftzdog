@@ -1,5 +1,7 @@
 local keymap = vim.keymap
-vim.g.mapleader = ' '
+
+-- Neo-tree
+keymap.set('n','<leader>b',':Neotree<Return>',{silent = true})
 
 -- Source file
 keymap.set('n','<leader>so',':so %')
