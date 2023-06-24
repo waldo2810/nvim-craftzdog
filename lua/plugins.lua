@@ -82,6 +82,12 @@ return require('packer').startup(function(use)
   use 'MunifTanjim/nui.nvim'
   use 'nvim-neo-tree/neo-tree.nvim'
 
+  -- Zen mode
+  use("folke/zen-mode.nvim")
+
+  -- Harpoon
+  use("theprimeagen/harpoon")
+
   -- -----------------------------------------
   if packer_bootstrap then
     require('packer').sync()
