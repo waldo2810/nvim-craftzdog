@@ -44,6 +44,7 @@ neotree.setup({
     width = 35,
   },
   filesystem = {
+    hijack_netrw_behavior = "disabled",
     use_libuv_file_watcher = true,
     filtered_items = {
       hide_dotfiles = false,
@@ -83,8 +84,3 @@ neotree.setup({
     },
   },
 })
-
-
--- keymaps
-
---vim.keymap.set('n','',)

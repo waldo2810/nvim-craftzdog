@@ -1,10 +1,17 @@
 local keymap = vim.keymap
 
 -- Neo-tree
-keymap.set('n','<leader>b',':Neotree<Return>',{silent = true})
+keymap.set('n','<leader>e',':Neotree<Return>',{silent = true})
 
 -- Source file
 keymap.set('n','<leader>so',':so %')
+
+-- Select all
+keymap.set('n', '<C-a>', 'gg<S-v>G')
+
+-- Fast saving
+keymap.set("n", "<Leader>w", ":write!<CR>", {})
+keymap.set("n", "<Leader>q", ":q!<CR>", {})
 
 -- Delete a word backwards
 keymap.set('n','dw','vb"_d')
@@ -26,6 +33,12 @@ keymap.set('','sh','<C-w>h')
 keymap.set('','sk','<C-w>k')
 keymap.set('','sj','<C-w>j')
 keymap.set('','sl','<C-w>l')
+
+-- Resize window
+keymap.set('n', '<C-left>', '<C-w><')
+keymap.set('n', '<C-right>', '<C-w>>')
+keymap.set('n', '<C-up>', '<C-w>+')
+keymap.set('n', '<C-down>', '<C-w>-')
 
 -- Bufferline
 keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
