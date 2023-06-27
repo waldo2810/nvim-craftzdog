@@ -88,6 +88,9 @@ return require('packer').startup(function(use)
   -- Harpoon
   use("theprimeagen/harpoon")
 
+  -- Git
+  use 'tpope/vim-fugitive'
+
   -- -----------------------------------------
   if packer_bootstrap then
     require('packer').sync()
