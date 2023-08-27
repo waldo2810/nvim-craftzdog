@@ -1,7 +1,10 @@
 local keymap = vim.keymap
 
+-- Nerdtrw?
+keymap.set('n','<leader>pv',':Ex<Return>',{silent = true})
+
 -- Neo-tree
-keymap.set('n','<leader>e',':Neotree<Return>',{silent = true})
+--keymap.set('n','<leader>e',':Neotree<Return>',{silent = true})
 
 -- Source file
 keymap.set('n','<leader>so',':so %')

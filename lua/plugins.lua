@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
   -- Colorscheme
   use { 'sainnhe/gruvbox-material' }
   use { 'rose-pine/neovim' }
+  use {'svrana/neosolarized.nvim', requires = { 'tjdevries/colorbuddy.nvim' }}
 
   -- Lualine
   use {
@@ -45,6 +46,7 @@ return require('packer').startup(function(use)
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
+    requires = { 'nvim-treesitter/nvim-treesitter-angular' },
     run = ':TSUpdate'
   }
 
@@ -77,10 +79,6 @@ return require('packer').startup(function(use)
   -- Mason
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-
-  -- Neotree
-  use 'MunifTanjim/nui.nvim'
-  use 'nvim-neo-tree/neo-tree.nvim'
 
   -- Zen mode
   use("folke/zen-mode.nvim")

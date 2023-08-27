@@ -17,7 +17,7 @@ require('telescope').setup {
   extensions = {
     file_browser = {
       theme = "dropdown",
-      hijack_netrw = true,
+--      hijack_netrw = true,
       mappings = {
         ["i"] = {
           ["<C-w>"] = function() vim.cmd('normal vbd') end,
