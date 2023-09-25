@@ -21,7 +21,9 @@ ts.setup {
     "css",
     "scss",
     "html",
-    "lua"
+    "lua",
+    "prisma",
+    "python"
   },
   autotag = {
     enable = true,

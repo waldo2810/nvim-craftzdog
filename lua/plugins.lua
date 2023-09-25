@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
   -- Colorscheme
   use { 'sainnhe/gruvbox-material' }
   use { 'rose-pine/neovim' }
-  use {'svrana/neosolarized.nvim', requires = { 'tjdevries/colorbuddy.nvim' }}
+  use { 'svrana/neosolarized.nvim', requires = { 'tjdevries/colorbuddy.nvim' } }
 
   -- Lualine
   use {

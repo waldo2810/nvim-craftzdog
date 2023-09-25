@@ -1,5 +1,8 @@
 local keymap = vim.keymap
 
+-- Close all buffers and reopen lastone
+keymap.set('n', '<leader>o', ':%bd|e#|bd#<cr>',{})
+
 -- Nerdtrw?
 keymap.set('n','<leader>pv',':Ex<Return>',{silent = true})
 
@@ -7,7 +10,7 @@ keymap.set('n','<leader>pv',':Ex<Return>',{silent = true})
 --keymap.set('n','<leader>e',':Neotree<Return>',{silent = true})
 
 -- Source file
-keymap.set('n','<leader>so',':so %')
+keymap.set('n','<leader>so',':so %<cr>',{silent=true})
 
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')

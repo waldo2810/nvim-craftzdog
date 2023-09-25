@@ -13,6 +13,6 @@ require('neosolarized').setup({disable_background = true})
 
 
 -- Apply
---vim.cmd.colorscheme 'gruvbox-material'
+vim.cmd.colorscheme 'gruvbox-material'
 --vim.cmd.colorscheme 'rose-pine'
-vim.cmd.colorscheme 'neosolarized'
+--vim.cmd.colorscheme 'neosolarized'
